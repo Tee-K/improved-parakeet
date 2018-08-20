@@ -1,37 +1,76 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en">
 
-You can use the [editor on GitHub](https://github.com/Tee-K/improved-parakeet/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Personal Portfolio</title>
+</head>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<body>
 
-### Markdown
+  <div id="landing">
+    <div id="landing-text">
+      <div id="landing-text-inner">
+        
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+        <a href="#images" class="btn" id="view-work">My Work</a>
 
-```markdown
-Syntax highlighted code block
+      </div>
+    </div>
+    <div id="landing-img"></div>
+  </div>
+  <div id="images">
+      <div class="" id="header">
+          <h2>My Works</h2>
+      </div>
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+  
 
-1. Numbered
-2. List
+    <div id="projects">
+      <div class="project-title">
+        <object type="text/html" data="https://codepen.io/teek/full/djKjgg" width="100%" height="100%" style="overflow:auto;border:5px ridge blue">
+        </object>
+      </div>
+      <div class="project-title">
+        <object type="text/html" data="https://codepen.io/teek/full/EpwKyd" width="100%" height="100%" style="overflow:auto;border:5px ridge blue">
+        </object>
+      </div>
+      <div class="project-title">
+        <object type="text/html" data="https://codepen.io/teek/full/BPJvJO" width="100%" height="100%" style="overflow:auto;border:5px ridge blue">
+        </object>
+      </div>
+      <div class="project-title">
+        <object type="text/html" data="https://codepen.io/teek/full/KxPLzm" width="100%" height="100%" style="overflow:auto;border:5px ridge blue">
+        </object>
+      </div>
+    </div>
+  </div>
+    <hr>
 
-**Bold** and _Italic_ and `Code` text
+    <footer>
+      <p style="color:mediumspringgreen">(Links to FCC Profile and GitHub Profile)</p>
+      <a href="https://github.com/Tee-K">GitHub</a>
+      <p>Page crafted by
+        <em>teek</em>
+      </p>
+    </footer>
 
-[Link](url) and ![Image](src)
-```
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+    <script>
+      // Animate Smooth Scroll 
+      $('#view-work').on('click', function () {
+        const images = $('#images').position().top;
 
-### Jekyll Themes
+        $('html, body').animate({
+          scrollTop: images
+        }, 900);
+      });
+    </script>
+</body>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Tee-K/improved-parakeet/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+</html>
